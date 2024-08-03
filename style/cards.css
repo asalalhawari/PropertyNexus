@@ -1,0 +1,66 @@
+div {
+  margin: 10px;
+}
+
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.item {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 1px;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  text-align: start;
+  box-shadow: 0 8px 12px gray;
+}
+
+h2 {
+  margin: 15px 0;
+}
+
+p {
+  margin: 0;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  margin: 5px;
+  background-color: darkgoldenrod;
+  color: aliceblue;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.7s;
+
+}
+
+button:hover {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border: 2px solid darkgoldenrod;
+  transition: 0.7s;
+}
+
+.card img {
+  margin: 0;
+  padding: 0;
+  width: 430px;
+  height: 300px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}

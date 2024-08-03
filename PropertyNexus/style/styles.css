@@ -1,0 +1,307 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* start nav */
+header {
+  position: fixed;
+  width: 100%;
+  background: #ffffff;
+  z-index: 999;
+  border: 1px solid grey;
+  padding: 5px 30px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  height: 50px;
+}
+
+header button {
+  width: 60px;
+  height: 30px;
+  margin: 10px;
+  font-size: 13px;
+  background-color: #99c1ec;
+  border-radius: 5px;
+  border: 1px solid #3a3a3a;
+}
+
+nav .links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+nav .links a {
+  text-decoration: none;
+  color: #2e2e2e;
+  font-size: 14px;
+  text-transform: capitalize;
+  transition: color 0.4s;
+  padding: 5px;
+  position: relative;
+}
+
+nav .links a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s ease-out;
+}
+
+nav .links a:hover {
+  color: rgba(0, 0, 0, 0.95);
+}
+
+nav .links a:hover::before {
+  width: 100%;
+}
+/* end nav */
+
+#home, #service, #about, #items {
+  height: 700px;
+  width: 1200px;
+}
+
+#home {
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.37);
+  width: 100%;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#myVideo {
+  position: absolute;
+  z-index: -100;
+  top: 0;
+  left: 0;
+}
+
+#filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 0;
+}
+
+#welcome {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 100px;
+  top: 250px;
+  z-index: 1;
+  font-size: 200px;
+  color: #fff;
+}
+
+#welcome button {
+  width: 140px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #393838;
+  border: none;
+}
+
+/* service section */
+.sec2 {
+  background-color: #ffffff;
+  margin: 20px;
+  padding: 30px;
+  text-align: start;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 30%;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  font-size: 1.2em;
+  color: #007bff;
+  margin-bottom: 30px;
+  text-align: start;
+}
+
+.service-card p {
+  font-size: 1em;
+  color: #555;
+}
+
+/* buttons and links */
+.home_btn {
+  width: 180px;
+}
+
+.home_btn2 {
+  display: flex;
+  margin-right: 20px;
+  padding: 0;
+  gap: 0;
+}
+
+.home_btn2 .nav_btns {
+  background-color: transparent;
+  width: 80px;
+  height: 40px;
+  gap: 20px;
+}
+
+.nav_btns button {
+  background-color: #888;
+}
+
+.home_btn2 .nav_btns .link {
+  text-decoration: none;
+  color: #2d2d2d;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.home_btn2 .nav_btns:hover .link {
+  color: #000;
+  text-decoration: none;
+}
+
+#welcome button a {
+  color: #000;
+}
+
+/* typography */
+h1 {
+  font-size: 50px;
+  margin-bottom: 70px;
+  text-align: center;
+  color: #fff;
+}
+
+p {
+  font-size: 15px;
+  margin: 20px;
+}
+
+h2 {
+  color: #000;
+  font-size: 20px;
+  margin: 20px;
+  margin-bottom: 30px;
+}
+
+/* footer */
+footer {
+  background-color: rgba(219, 219, 219, 0.85);
+  margin-top: 30px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer div {
+  align-items: center;
+  align-self: center;
+}
+
+/* about section */
+.about-contenar {
+  display: flex;
+}
+
+.about-contenar img {
+  width: 260px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  #home, #service, #about, #items {
+    width: 100%;
+  }
+  .service-card {
+    width: 45%;
+  }
+  #welcome {
+    left: 50px;
+    top: 200px;
+    font-size: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav .links {
+    display: none;
+  }
+  nav .links.mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  header button {
+    width: 50px;
+    height: 25px;
+    font-size: 12px;
+  }
+  #welcome {
+    left: 20px;
+    top: 150px;
+    font-size: 100px;
+  }
+  .service-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 5px 15px;
+  }
+  header button {
+    width: 40px;
+    height: 20px;
+    font-size: 10px;
+  }
+  #welcome {
+    font-size: 60px;
+  }
+}

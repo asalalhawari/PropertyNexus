@@ -1,0 +1,131 @@
+@media (min-width: 1200px) {
+  .service-card {
+    width: 30%;
+  }
+  
+  .container {
+    width: 70%;
+  }
+
+  .about-contenar {
+    display: flex;
+    align-items: center;
+  }
+
+  .about-contenar img {
+    width: 260px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .service-card {
+    width: 45%;
+  }
+  
+  .container {
+    width: 80%;
+  }
+
+  .about-contenar {
+    display: flex;
+    align-items: center;
+  }
+
+  .about-contenar img {
+    width: 200px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  header {
+    padding: 5px 15px;
+  }
+
+  nav img {
+    height: 40px;
+  }
+
+  header button {
+    width: 50px;
+    height: 25px;
+    font-size: 12px;
+  }
+
+  nav .links {
+    gap: 10px;
+  }
+
+  .service-card {
+    width: 100%;
+  }
+
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .about-section img {
+    max-width: 200px;
+  }
+
+  .card .item {
+    flex-basis: 100%;
+  }
+
+  
+  #home, #service, #about, #items {
+    height: auto; 
+  }
+
+  #welcome {
+    font-size: 100px; 
+    top: 150px;
+  }
+
+  #welcome button {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  header {
+    padding: 5px 10px;
+  }
+
+  nav img {
+    height: 30px;
+  }
+
+  header button {
+    width: 40px;
+    height: 20px;
+    font-size: 10px;
+  }
+
+  .service-card {
+    width: 100%;
+    margin: 5px;
+  }
+
+  .about-section img {
+    max-width: 150px;
+  }
+
+  #welcome {
+    font-size: 80px; 
+    left: 10px;
+    top: 100px;
+  }
+
+  #welcome button {
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+  }
+}
